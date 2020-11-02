@@ -17,6 +17,7 @@ const Pathfind = () => {
     const [Grid, setGrid] = useState([])
     const [Path, setPath] = useState([])
     const [VisitedNodes, setVisitedNodes] = useState([])
+    const [error, setError] = useState(false)
 
 
     useEffect(() => {
@@ -42,6 +43,7 @@ const Pathfind = () => {
         endNode.isWall = false
         setPath(path.path)
         setVisitedNodes(path.visitedNodes)
+        if(path.error) setError(true)
     }
 
     //creates spots
@@ -139,6 +141,7 @@ const Pathfind = () => {
         <div className='wrapper'>
         <button className = 'btn' onClick = {visualizePath}>Click to Visualize Path - A* Algorithm</button>
         <h4>Sudarshan Suryaprakash</h4>
+        {error ? <h1>Can't find a path!</h1> : null}
             {gridWithNodes()}
         </div>
     )

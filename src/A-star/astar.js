@@ -58,7 +58,7 @@ const astar = (startNode, endNode) => {
 }
 
 const heuristic = (a,b) => {
-    let d = Math.abs(a.x - b.x) + Math.abs(a.y - b.y)
+    let d = Math.abs((a.x - b.x)) + Math.abs((a.y - b.y))
     return d
 }
 
