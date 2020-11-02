@@ -6,7 +6,7 @@ import astar from '../../A-star/astar'
 
 
 const cols = 30
-const rows = 18
+const rows = 16
 
 const NODE_START_ROW = 0
 const NODE_END_ROW = rows - 1
@@ -138,6 +138,7 @@ const Pathfind = () => {
     return (
         <div className='wrapper'>
         <button className = 'btn' onClick = {visualizePath}>Click to Visualize Path - A* Algorithm</button>
+        <h4>Sudarshan Suryaprakash</h4>
             {gridWithNodes()}
         </div>
     )
