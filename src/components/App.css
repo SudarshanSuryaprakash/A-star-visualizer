@@ -1,0 +1,9 @@
+.main {
+  background: linear-gradient(
+    to right bottom,
+    rgb(216, 240, 111),
+    rgb(252, 104, 141)
+  );
+  margin: 0;
+  padding: 0;
+}
