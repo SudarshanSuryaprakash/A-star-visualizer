@@ -5,12 +5,16 @@ import Node from '../node/Node'
 import astar from '../../A-star/astar'
 
 
-const cols = 30
-const rows = 16
+const cols = 120
+const rows = 58
 
 const NODE_START_ROW = 0
+// const NODE_START_ROW = Math.floor(Math.random()*rows) 
+// const NODE_END_ROW = Math.floor(Math.random()*rows)
 const NODE_END_ROW = rows - 1
 const NODE_START_COLUMN = 0
+// const NODE_START_COLUMN = Math.floor(Math.random()*cols) 
+// const NODE_END_COLUMN = Math.floor(Math.random()*cols) 
 const NODE_END_COLUMN = cols - 1
 
 const Pathfind = () => {
