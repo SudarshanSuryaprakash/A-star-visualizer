@@ -137,7 +137,7 @@ const Pathfind = () => {
     }
     return (
         <div className='wrapper'>
-        <button className = 'btn' onClick = {visualizePath}>Visualize Path - A* Algorithm</button>
+        <button className = 'btn' onClick = {visualizePath}>Click to Visualize Path - A* Algorithm</button>
             {gridWithNodes()}
         </div>
     )
