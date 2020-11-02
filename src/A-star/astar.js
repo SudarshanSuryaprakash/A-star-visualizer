@@ -27,8 +27,8 @@ const astar = (startNode, endNode) => {
         }
 
         openSet = openSet.filter(el => el !== current)
-
         closedSet.push(current)
+
         let neighbors = current.neighbors;
         for(let i = 0; i < neighbors.length; i++){
             let neighbor = neighbors[i]
@@ -39,7 +39,6 @@ const astar = (startNode, endNode) => {
                     if(tempG < neighbor.g){
                         neighbor.g = tempG
                         newPath = true
-                        
                     }
                 } else {
                     neighbor.g = tempG
@@ -59,7 +58,7 @@ const astar = (startNode, endNode) => {
 }
 
 const heuristic = (a,b) => {
-    let d = Math.abs(a.x - a.y) + Math.abs(b.x - b.y)
+    let d = Math.abs(a.x - b.x) + Math.abs(a.y - b.y)
     return d
 }
 
