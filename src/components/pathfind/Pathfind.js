@@ -145,7 +145,7 @@ const Pathfind = () => {
         <div className='wrapper'>
         <button className = 'btn' onClick = {visualizePath}>Click to Visualize Path - A* Algorithm</button>
         <h4>Sudarshan Suryaprakash</h4>
-        {error ? <h1>Can't find a path!</h1> : null}
+        {error ? <h1>Can't find a path! Please refresh the page.</h1> : null}
             {gridWithNodes()}
         </div>
     )
